@@ -5,18 +5,18 @@ let quotes = [
     // Add more quotes as needed
   ];
   
-  // Function to show a random quote
+  // Function to show a random quote (displayRandomQuote function)
   function showRandomQuote() {
     const quoteDisplay = document.getElementById('quoteDisplay');
     const randomIndex = Math.floor(Math.random() * quotes.length);
     const quote = quotes[randomIndex];
-    quoteDisplay.textContent = `"${quote.text}" - ${quote.category}`;
+    quoteDisplay.textContent = `"${quote.text}" - ${quote.category}"`;
   }
   
   // Event listener for "Show New Quote" button
   document.getElementById('newQuote').addEventListener('click', showRandomQuote);
   
-  // Function to add a new quote
+  // Function to add a new quote (addQuote function)
   function addQuote() {
     const newQuoteText = document.getElementById('newQuoteText').value;
     const newQuoteCategory = document.getElementById('newQuoteCategory').value;
